@@ -1,0 +1,74 @@
+<!-- Urvi Awasthi; October 17, 2018; Rent Page -->
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title> Rent a Car </title>
+		<link rel = "stylesheet" type = "text/css" href = "style.css"> <!--external style sheet-->
+		<link rel="icon" href="icon.jpg" type="image" sizes="16x16"> <!--webpage icon-->
+		<script src = "script.js"></script>	<!-- external java script -->	
+	</head>
+
+	<body onload="showCar()">
+		<div class="navbar"> <!--navbar -->
+		  <a href="home.html"> Home</a> 
+		  <a href="ourcars.html"> Our Cars</a> 
+		  <a href="rent.html"> Rent A Car</a>
+		</div>
+		<br> <br> <br>
+		<div class = "container">  <!--page content -->
+			<h1> Fill out the form below to rent a car! </h1>
+			 <p>Are you ready to rent a car? Your invoice will be printed as soon as you fill out the form below. You will be ready to rent the car immediately afterwards!</p>
+			<fieldset id = "form"> <!-- form to rent a car -->
+				<legend> <span>Rent-a-Car Form</span> </legend>
+					Full name: 
+					<input type = "text" name = "full name" id = "name" > <br> <!-- name input -->
+					
+					Email Address: 
+					<input type = "email" name = "email" id = "email"> <br> <!--email input -->
+
+					Phone Number:
+					<input type="tel" name="phone number" id = "phone"> <br> <!--phone number input-->
+					
+					Number of Days for Rental: 
+					<input type="number" name="days for rental" id = "days"> <br><!-- days input-->
+					
+					Car Model: 
+					<select id = "select"> <!--car model selection -->
+						<option value="Honda">Honda</option>
+						<option value="Toyota">Toyota</option>
+						<option value="Nissan">Nissan</option>
+						<option value="Chevrolet">Chevrolet</option>
+						<option value="Ford">Ford</option>
+						<option value="Porsche">Porsche</option>
+						<option value="Jaguar">Jaguar</option>
+						<option value="Mercedes">Mercedes</option>
+						<option value="Tesla">Tesla</option>
+						<option value="Ferrari">Ferrari</option>	
+					</select> 
+					
+					<!-- submit button, onclick, it will call the invoice function -->			
+					<br> <input type="submit" value="Submit" id = "submit" onclick = "invoice()"> 
+			</fieldset>
+			
+			<!-- canvas and animation --> 
+		
+			<canvas id="myCanvas" width= "300px"  height = "300px"> 
+				<img id="car1" src="car1.png">
+				<img id="car2" src="car1.png">
+				<img id="car3" src="car1.png">
+				<img id="car4" src="car1.png">
+				<img id="car5" src="car1.png">
+				
+				<img id="car6" src="car2.png">
+				<img id="car7" src="car2.png">
+				<img id="car8" src="car2.png">
+				<img id="car9" src="car2.png">
+				<img id="car10" src="car2.png">	
+			</canvas>
+			
+			<!-- output for invoice -->
+			<div id = "output"> </div>
+
+		</div>
+	</body> 
+</html>

@@ -1,0 +1,99 @@
+/**styling page content **/
+body {
+	background-image: url("rentbgd.jpg");
+	height: 100%; 
+	background-attachment: fixed; /**making the background image fixed, while moving the container**/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	line-height: 1.5; /**spacing between the lines **/
+}
+/**styling the navbar **/
+.navbar {
+	overflow: hidden;
+    background-color: #333;
+    width: 100%; /* Full width */
+	font-family: 'Corben', Georgia, Times, serif;
+	font-size: 30px;
+	margin: 0; 
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+
+}
+.navbar a {
+	float: left;
+	padding: 12px;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+}
+.navbar a:hover {
+	background-color: #000; /**changing the color when mouse hovers over the navbar **/
+}
+.active {
+	background-color: #4CAF50;
+}
+/**styling the container in which there is page content **/
+.container {
+	background-color: #ffffff;
+	opacity: 0.95; /**making the container a little transparent **/
+	padding: 30px;
+	display: block;
+	width: 70%; 
+	margin: auto; 
+}
+canvas { /**setting the parking lot as the background image for the canvas **/
+	background: url('parkinglot.jpg'); 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	margin-left: 75px;
+}
+h1 { /**styling the header **/
+	padding-top: 25px; 
+	font-size: 75px; 
+	font-family: 'Corben', Georgia, Times, serif;
+	text-align: center; 
+}		
+p, fieldset { /**styling innermost content **/
+	font-family: 'Nobile', Helvetica, Arial, sans-serif; 
+	font-size: 21px;
+}
+fieldset { /**styling form **/
+	float: left;
+	margin-left: 50px; 
+	width: 45%; 
+}#form { 
+	text-align: left; 
+}
+img { /**formatting images on home page **/
+	opacity: 1;
+	cursor: pointer; 
+	text-align: center; 
+}
+img: hover { /**when mouse hovers over image, it becomes slightly transparent**/
+	opacity: 0.3; 
+}
+.decoration { /**styling innermost content **/
+	height: 350px; 
+	width: 500px; 
+}
+#submit { /**styling submit button **/
+	display: block; 
+	margin: auto; 
+}
+#cars { /**styling innermost content **/
+	font-family: 'Nobile', Helvetica, Arial, sans-serif; 
+	font-size: 45px; 
+	text-align: center; 
+}
+#output { /**styling page content **/
+	text-align: center; 
+	margin: 20px; 
+	padding: 20px; 
+}
+#titleImage { /**styling page logo **/
+	width: 99%; 
+}
+
